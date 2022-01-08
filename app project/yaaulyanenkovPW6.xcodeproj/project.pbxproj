@@ -15,6 +15,7 @@
 		9919E52F278A2EFA009BD735 /* UIView++Pin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9919E52E278A2EFA009BD735 /* UIView++Pin.swift */; };
 		9919E567278A426E009BD735 /* MyLogger1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9919E565278A424D009BD735 /* MyLogger1.framework */; };
 		9919E568278A426E009BD735 /* MyLogger1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9919E565278A424D009BD735 /* MyLogger1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9919E570278A44B3009BD735 /* MyLogger2 in Frameworks */ = {isa = PBXBuildFile; productRef = 9919E56F278A44B3009BD735 /* MyLogger2 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		9919E52C278A2B12009BD735 /* ButtonsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsViewController.swift; sourceTree = "<group>"; };
 		9919E52E278A2EFA009BD735 /* UIView++Pin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView++Pin.swift"; sourceTree = "<group>"; };
 		9919E560278A424D009BD735 /* MyLogger1.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MyLogger1.xcodeproj; path = ../MyLogger1/MyLogger1.xcodeproj; sourceTree = "<group>"; };
+		9919E56D278A442B009BD735 /* MyLogger2 */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = MyLogger2; path = ../../MyLogger2; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9919E567278A426E009BD735 /* MyLogger1.framework in Frameworks */,
+				9919E570278A44B3009BD735 /* MyLogger2 in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +89,7 @@
 		9919E509278A2A04009BD735 /* yaaulyanenkovPW6 */ = {
 			isa = PBXGroup;
 			children = (
+				9919E56D278A442B009BD735 /* MyLogger2 */,
 				9919E50A278A2A04009BD735 /* AppDelegate.swift */,
 				9919E50C278A2A04009BD735 /* SceneDelegate.swift */,
 				9919E513278A2A09009BD735 /* Assets.xcassets */,
@@ -129,6 +133,9 @@
 			dependencies = (
 			);
 			name = yaaulyanenkovPW6;
+			packageProductDependencies = (
+				9919E56F278A44B3009BD735 /* MyLogger2 */,
+			);
 			productName = yaaulyanenkovPW6;
 			productReference = 9919E507278A2A04009BD735 /* yaaulyanenkovPW6.app */;
 			productType = "com.apple.product-type.application";
@@ -412,6 +419,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9919E56F278A44B3009BD735 /* MyLogger2 */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MyLogger2;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9919E4FF278A2A04009BD735 /* Project object */;
 }

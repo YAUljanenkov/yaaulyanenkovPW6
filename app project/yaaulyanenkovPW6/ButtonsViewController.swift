@@ -7,6 +7,7 @@
 
 import UIKit
 import MyLogger1
+import MyLogger2
 
 class ButtonsViewController: UIViewController {
     
@@ -53,7 +54,7 @@ class ButtonsViewController: UIViewController {
     }
     
     @objc func secondButtonPressed() {
-        print("2 pressed!")
+        MyLogger2.log("hello, world")
     }
     
     @objc func thirdButtonPressed() {
