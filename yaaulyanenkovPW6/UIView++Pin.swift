@@ -143,7 +143,7 @@ extension UIView {
     ) -> NSLayoutConstraint {
         translatesAutoresizingMaskIntoConstraints = false
         let constraint = bottomAnchor.constraint(
-            equalTo: superView.bottomAnchor,
+            equalTo: superView.safeAreaLayoutGuide.bottomAnchor,
             constant: -CGFloat(const)
         )
         constraint.isActive = true
@@ -171,7 +171,7 @@ extension UIView {
     ) -> NSLayoutConstraint {
         translatesAutoresizingMaskIntoConstraints = false
         let constraint = topAnchor.constraint(
-            equalTo: superView.topAnchor,
+            equalTo: superView.safeAreaLayoutGuide.topAnchor,
             constant: CGFloat(const)
         )
         constraint.isActive = true
