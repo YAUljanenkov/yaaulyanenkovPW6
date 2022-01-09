@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		945A92A7A3BF3EDB85166C3D /* Pods_yaaulyanenkovPW6.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCD2504928C1CC020EF8DFBB /* Pods_yaaulyanenkovPW6.framework */; };
 		9919E50B278A2A04009BD735 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9919E50A278A2A04009BD735 /* AppDelegate.swift */; };
 		9919E50D278A2A04009BD735 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9919E50C278A2A04009BD735 /* SceneDelegate.swift */; };
 		9919E514278A2A09009BD735 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9919E513278A2A09009BD735 /* Assets.xcassets */; };
@@ -43,6 +44,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		482FAEB65D98806433A1F1E8 /* Pods-yaaulyanenkovPW6.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yaaulyanenkovPW6.debug.xcconfig"; path = "Target Support Files/Pods-yaaulyanenkovPW6/Pods-yaaulyanenkovPW6.debug.xcconfig"; sourceTree = "<group>"; };
 		9919E507278A2A04009BD735 /* yaaulyanenkovPW6.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = yaaulyanenkovPW6.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9919E50A278A2A04009BD735 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9919E50C278A2A04009BD735 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +55,8 @@
 		9919E52E278A2EFA009BD735 /* UIView++Pin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView++Pin.swift"; sourceTree = "<group>"; };
 		9919E560278A424D009BD735 /* MyLogger1.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MyLogger1.xcodeproj; path = ../MyLogger1/MyLogger1.xcodeproj; sourceTree = "<group>"; };
 		9919E56D278A442B009BD735 /* MyLogger2 */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = MyLogger2; path = ../../MyLogger2; sourceTree = "<group>"; };
+		CD4215A7C9076ADBAF45B15A /* Pods-yaaulyanenkovPW6.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yaaulyanenkovPW6.release.xcconfig"; path = "Target Support Files/Pods-yaaulyanenkovPW6/Pods-yaaulyanenkovPW6.release.xcconfig"; sourceTree = "<group>"; };
+		DCD2504928C1CC020EF8DFBB /* Pods_yaaulyanenkovPW6.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_yaaulyanenkovPW6.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,7 @@
 			files = (
 				9919E567278A426E009BD735 /* MyLogger1.framework in Frameworks */,
 				9919E570278A44B3009BD735 /* MyLogger2 in Frameworks */,
+				945A92A7A3BF3EDB85166C3D /* Pods_yaaulyanenkovPW6.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +80,7 @@
 				9919E509278A2A04009BD735 /* yaaulyanenkovPW6 */,
 				9919E508278A2A04009BD735 /* Products */,
 				9919E566278A426E009BD735 /* Frameworks */,
+				CE9ACA623198EB4F136553D4 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,8 +118,19 @@
 		9919E566278A426E009BD735 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DCD2504928C1CC020EF8DFBB /* Pods_yaaulyanenkovPW6.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE9ACA623198EB4F136553D4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				482FAEB65D98806433A1F1E8 /* Pods-yaaulyanenkovPW6.debug.xcconfig */,
+				CD4215A7C9076ADBAF45B15A /* Pods-yaaulyanenkovPW6.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,10 +140,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9919E51B278A2A09009BD735 /* Build configuration list for PBXNativeTarget "yaaulyanenkovPW6" */;
 			buildPhases = (
+				E51EF0E482FACE8E1393CDE4 /* [CP] Check Pods Manifest.lock */,
 				9919E503278A2A04009BD735 /* Sources */,
 				9919E504278A2A04009BD735 /* Frameworks */,
 				9919E505278A2A04009BD735 /* Resources */,
 				9919E569278A426E009BD735 /* Embed Frameworks */,
+				62D5C1525E2DE272122E28AA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -200,6 +219,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		62D5C1525E2DE272122E28AA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-yaaulyanenkovPW6/Pods-yaaulyanenkovPW6-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-yaaulyanenkovPW6/Pods-yaaulyanenkovPW6-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-yaaulyanenkovPW6/Pods-yaaulyanenkovPW6-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E51EF0E482FACE8E1393CDE4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-yaaulyanenkovPW6-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9919E503278A2A04009BD735 /* Sources */ = {
@@ -345,6 +406,7 @@
 		};
 		9919E51C278A2A09009BD735 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 482FAEB65D98806433A1F1E8 /* Pods-yaaulyanenkovPW6.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -372,6 +434,7 @@
 		};
 		9919E51D278A2A09009BD735 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD4215A7C9076ADBAF45B15A /* Pods-yaaulyanenkovPW6.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

@@ -1,0 +1,6 @@
+framework module Pods_yaaulyanenkovPW6 {
+  umbrella header "Pods-yaaulyanenkovPW6-umbrella.h"
+
+  export *
+  module * { export * }
+}
