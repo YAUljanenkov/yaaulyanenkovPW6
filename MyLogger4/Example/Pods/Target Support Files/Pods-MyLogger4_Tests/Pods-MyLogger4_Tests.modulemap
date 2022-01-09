@@ -1,0 +1,6 @@
+framework module Pods_MyLogger4_Tests {
+  umbrella header "Pods-MyLogger4_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

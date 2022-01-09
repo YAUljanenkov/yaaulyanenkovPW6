@@ -1,0 +1,6 @@
+use_frameworks!
+target 'MyLogger4_Tests' do
+  pod 'MyLogger4', :path => '../'
+  
+  
+end
