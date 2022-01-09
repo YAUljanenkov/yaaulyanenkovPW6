@@ -17,8 +17,8 @@
 		9919E567278A426E009BD735 /* MyLogger1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9919E565278A424D009BD735 /* MyLogger1.framework */; };
 		9919E568278A426E009BD735 /* MyLogger1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9919E565278A424D009BD735 /* MyLogger1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9919E570278A44B3009BD735 /* MyLogger2 in Frameworks */ = {isa = PBXBuildFile; productRef = 9919E56F278A44B3009BD735 /* MyLogger2 */; };
-		9919E582278B5E4E009BD735 /* MyLogger4.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9919E581278B5E4E009BD735 /* MyLogger4.xcframework */; };
-		9919E583278B5E4E009BD735 /* MyLogger4.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9919E581278B5E4E009BD735 /* MyLogger4.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9919E584278B5F2F009BD735 /* MyLogger4.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9919E581278B5E4E009BD735 /* MyLogger4.xcframework */; };
+		9919E585278B5F2F009BD735 /* MyLogger4.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9919E581278B5E4E009BD735 /* MyLogger4.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +38,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				9919E583278B5E4E009BD735 /* MyLogger4.xcframework in Embed Frameworks */,
+				9919E585278B5F2F009BD735 /* MyLogger4.xcframework in Embed Frameworks */,
 				9919E568278A426E009BD735 /* MyLogger1.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -72,7 +72,7 @@
 			files = (
 				9919E567278A426E009BD735 /* MyLogger1.framework in Frameworks */,
 				9919E570278A44B3009BD735 /* MyLogger2 in Frameworks */,
-				9919E582278B5E4E009BD735 /* MyLogger4.xcframework in Frameworks */,
+				9919E584278B5F2F009BD735 /* MyLogger4.xcframework in Frameworks */,
 				945A92A7A3BF3EDB85166C3D /* Pods_yaaulyanenkovPW6.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
