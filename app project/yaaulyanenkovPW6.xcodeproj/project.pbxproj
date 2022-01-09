@@ -17,6 +17,8 @@
 		9919E567278A426E009BD735 /* MyLogger1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9919E565278A424D009BD735 /* MyLogger1.framework */; };
 		9919E568278A426E009BD735 /* MyLogger1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9919E565278A424D009BD735 /* MyLogger1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9919E570278A44B3009BD735 /* MyLogger2 in Frameworks */ = {isa = PBXBuildFile; productRef = 9919E56F278A44B3009BD735 /* MyLogger2 */; };
+		9919E582278B5E4E009BD735 /* MyLogger4.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9919E581278B5E4E009BD735 /* MyLogger4.xcframework */; };
+		9919E583278B5E4E009BD735 /* MyLogger4.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9919E581278B5E4E009BD735 /* MyLogger4.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				9919E583278B5E4E009BD735 /* MyLogger4.xcframework in Embed Frameworks */,
 				9919E568278A426E009BD735 /* MyLogger1.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -55,6 +58,9 @@
 		9919E52E278A2EFA009BD735 /* UIView++Pin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView++Pin.swift"; sourceTree = "<group>"; };
 		9919E560278A424D009BD735 /* MyLogger1.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MyLogger1.xcodeproj; path = ../MyLogger1/MyLogger1.xcodeproj; sourceTree = "<group>"; };
 		9919E56D278A442B009BD735 /* MyLogger2 */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = MyLogger2; path = ../../MyLogger2; sourceTree = "<group>"; };
+		9919E57C278B5DC4009BD735 /* iOS */ = {isa = PBXFileReference; lastKnownFileType = folder; name = iOS; path = Carthage/Build/iOS; sourceTree = "<group>"; };
+		9919E57E278B5DD5009BD735 /* MyLogger4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MyLogger4.framework; path = Carthage/Build/iOS/MyLogger4.framework; sourceTree = "<group>"; };
+		9919E581278B5E4E009BD735 /* MyLogger4.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MyLogger4.xcframework; path = ../MyLogger4/Carthage/Build/MyLogger4.xcframework; sourceTree = "<group>"; };
 		CD4215A7C9076ADBAF45B15A /* Pods-yaaulyanenkovPW6.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yaaulyanenkovPW6.release.xcconfig"; path = "Target Support Files/Pods-yaaulyanenkovPW6/Pods-yaaulyanenkovPW6.release.xcconfig"; sourceTree = "<group>"; };
 		DCD2504928C1CC020EF8DFBB /* Pods_yaaulyanenkovPW6.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_yaaulyanenkovPW6.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -66,6 +72,7 @@
 			files = (
 				9919E567278A426E009BD735 /* MyLogger1.framework in Frameworks */,
 				9919E570278A44B3009BD735 /* MyLogger2 in Frameworks */,
+				9919E582278B5E4E009BD735 /* MyLogger4.xcframework in Frameworks */,
 				945A92A7A3BF3EDB85166C3D /* Pods_yaaulyanenkovPW6.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -118,6 +125,9 @@
 		9919E566278A426E009BD735 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9919E581278B5E4E009BD735 /* MyLogger4.xcframework */,
+				9919E57E278B5DD5009BD735 /* MyLogger4.framework */,
+				9919E57C278B5DC4009BD735 /* iOS */,
 				DCD2504928C1CC020EF8DFBB /* Pods_yaaulyanenkovPW6.framework */,
 			);
 			name = Frameworks;
@@ -129,7 +139,6 @@
 				482FAEB65D98806433A1F1E8 /* Pods-yaaulyanenkovPW6.debug.xcconfig */,
 				CD4215A7C9076ADBAF45B15A /* Pods-yaaulyanenkovPW6.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -413,6 +422,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = W854V7BR4R;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = yaaulyanenkovPW6/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -441,6 +454,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = W854V7BR4R;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = yaaulyanenkovPW6/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
